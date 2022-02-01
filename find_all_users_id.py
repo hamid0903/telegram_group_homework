@@ -1,7 +1,8 @@
+from pyexpat.errors import messages
 from read_data import read_data
-
-def find_all_users_id(data: dict)->list:
-    """ 
+import json
+#def find_all_users_id(data: dict)->list:
+"""
     This function will find all the users in the json file and return the list of users id
     
     Parameters:
@@ -9,4 +10,10 @@ def find_all_users_id(data: dict)->list:
     Returns:
         list: List containing all the users id
     """
-    return
+    #f=open('data\result.json',encoding='utf8').read()
+    #data=json.loads(f)
+    #return len(data['id'])
+
+f=open('result.json',encoding='utf8').read()
+data=json.loads(f)
+print(data["id"])
