@@ -1,8 +1,9 @@
+from re import X
 from read_data import read_data
-from find_all_users_id import find_all_users_id
-
-def find_user_message_count(data: dict, users_id: str)->dict:
-    """
+#from find_all_users_id import find_all_users_id
+import json
+#def find_user_message_count(data: dict, users_id: str)->dict:
+"""
     This function will find the user's message count.
     
     Parameters:
@@ -11,4 +12,8 @@ def find_user_message_count(data: dict, users_id: str)->dict:
     Returns:
         dict: Number of messages of the users
     """
-    return
+    
+    #return x
+f=open('result.json',encoding='utf8').read()
+data=json.loads(f)
+print(len(data['messages']))
