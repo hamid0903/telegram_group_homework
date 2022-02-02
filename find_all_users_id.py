@@ -29,5 +29,5 @@ def find_all_users_id(data: dict)->list:
                 user_id2.append(item)
                     
     return user_id2
-data=read_data('result.json')
+data=read_data('data/result.json')
 print(find_all_users_id(data))
