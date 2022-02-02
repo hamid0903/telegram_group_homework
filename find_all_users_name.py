@@ -27,5 +27,5 @@ def find_all_users_name(data: dict)->list:
                 user_name2.append(item)
     return user_name2
 
-data=read_data('result.json')
+data=read_data('data/result.json')
 print(find_all_users_name(data))
