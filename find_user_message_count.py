@@ -14,6 +14,6 @@ import json
     """
     
     #return x
-f=open('result.json',encoding='utf8').read()
+f=open('data/result.json',encoding='utf8').read()
 data=json.loads(f)
 print(len(data['messages']))
